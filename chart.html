@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="chart.css">
+</head>
+<body>
+    <form id="frm">
+        <input type="text" id="txt1" value="C#">
+        <input type="number" id="num1" value="10">
+        <input type="color" id="cl1" value="#C14444"><br>
+        <input type="text" id="txt2" value="PHP">
+        <input type="number" id="num2" value="10">
+        <input type="color" id="cl2" value="#00EE12"><br>
+        <input type="text" id="txt3" value="Java">
+        <input type="number" id="num3" value="10">
+        <input type="color" id="cl3" value="#EEE456"><br>
+        <input type="text" id="txt4" value="Sql">
+        <input type="number" id="num4" value="10">
+        <input type="color" id="cl4" value="#123FFF"><br>
+        <input type="checkbox" value="Pie Chart" id="chk1">Pie Chart
+        <input type="checkbox" value="Doughnut Chart" id="chk2">Doughnut Chart <br>
+        <input type="checkbox" value="Line Chart" id="chk3">Line Chart
+        <input type="checkbox" value="Bar Chart" id="chk4">Bar Chart <br>
+        <input type="submit" value="Draw" id="btn">
+    </form>
+    <canvas id="myCanvas" width="1000px" height="300px"></canvas>
+    <svg id="mysvg1">
+        <g id="container" fill="" stroke="black" stroke-width="0.5" >
+        <line x1="40" y1="8" x2="40" y2="364" stroke="#000000" stroke-width="2"/>
+        <line x1="40" y1="364" x2="390" y2="364" stroke="#000000" stroke-width="2"/>
+        <circle width="100" heigth="100" r="3" cx="40" cy="8"/>
+        <circle width="100" heigth="100" r="3" cx="40" cy="40"/>
+        <circle width="100" heigth="100" r="3" cx="40" cy="76"/>
+        <circle width="100" heigth="100" r="3" cx="40" cy="112"/>
+        <circle width="100" heigth="100" r="3" cx="40" cy="148"/>
+        <circle width="100" heigth="100" r="3" cx="40" cy="184"/>
+        <circle width="100" heigth="100" r="3" cx="40" cy="220"/>
+        <circle width="100" heigth="100" r="3" cx="40" cy="256"/>
+        <circle width="100" heigth="100" r="3" cx="40" cy="292"/>
+        <circle width="100" heigth="100" r="3" cx="40" cy="328"/>
+        <line x1="40" y1="328" x2="390" y2="328" stroke="#000000" stroke-width=".5"/>
+        <text x="15" y="331" class="text">10</text>
+        <line x1="40" y1="292" x2="390" y2="292" stroke="#000000" stroke-width=".5"/>
+        <text x="15" y="295" class="text">20</text>
+        <line x1="40" y1="256" x2="390" y2="256" stroke="#000000" stroke-width=".5"/>
+        <text x="15" y="259" class="text">30</text>
+        <line x1="40" y1="220" x2="390" y2="220" stroke="#000000" stroke-width=".5"/>
+        <text x="15" y="223" class="text">40</text>
+        <line x1="40" y1="184" x2="390" y2="184" stroke="#000000" stroke-width=".5"/>
+        <text x="15" y="187" class="text">50</text>
+        <line x1="40" y1="148" x2="390" y2="148" stroke="#000000" stroke-width=".5"/>
+        <text x="15" y="151" class="text">60</text>
+        <line x1="40" y1="112" x2="390" y2="112" stroke="#000000" stroke-width=".5"/>
+        <text x="15" y="115" class="text">70</text>
+        <line x1="40" y1="76" x2="390" y2="76" stroke="#000000" stroke-width=".5"/>
+        <text x="15" y="79" class="text">80</text>
+        <line x1="40" y1="40" x2="390" y2="40" stroke="#000000" stroke-width=".5"/>
+        <text x="15" y="43" class="text">90</text>
+        <line x1="40" y1="8" x2="390" y2="8" stroke="#000000" stroke-width=".5"/>
+        <text x="15" y="11" class="text">100</text>
+        
+        
+        <line x1="105" y1="8" x2="105" y2="360" stroke="#000000" stroke-width=".5"/>
+        <text x="98" y="390" class="text" id="txt5"></text>
+        <line x1="195" y1="8" x2="195" y2="360" stroke="#000000" stroke-width=".5"/>
+        <text x="188" y="390" class="text" id="txt6"></text>
+        <line x1="275" y1="8" x2="275" y2="360" stroke="#000000" stroke-width=".5"/>
+        <text x="268" y="390" class="text" id="txt7"></text>
+        <line x1="355" y1="8" x2="355" y2="360" stroke="#000000" stroke-width=".5"/>
+        <text x="348" y="390" class="text" id="txt8"></text>
+        <circle width="100" heigth="100" r="3" cx="105" cy="364"/>
+        <circle width="100" heigth="100" r="3" cx="195" cy="364"/>
+        <circle width="100" heigth="100" r="3" cx="275" cy="364"/>
+        <circle width="100" heigth="100" r="3" cx="355" cy="364"/>
+        <polyline id="pl1" fill="none"/>
+    </g>
+    </svg>
+    <svg id="mysvg2">
+        <g id="container2" fill="" stroke="black" stroke-width="0.5" >
+            <line x1="40" y1="8" x2="40" y2="364" stroke="#000000" stroke-width="2"/>
+            <line x1="40" y1="364" x2="390" y2="364" stroke="#000000" stroke-width="2"/>
+         <circle width="100" heigth="100" r="3" cx="40" cy="8"/>
+        <circle width="100" heigth="100" r="3" cx="40" cy="40"/>
+        <circle width="100" heigth="100" r="3" cx="40" cy="76"/>
+        <circle width="100" heigth="100" r="3" cx="40" cy="112"/>
+        <circle width="100" heigth="100" r="3" cx="40" cy="148"/>
+        <circle width="100" heigth="100" r="3" cx="40" cy="184"/>
+        <circle width="100" heigth="100" r="3" cx="40" cy="220"/>
+        <circle width="100" heigth="100" r="3" cx="40" cy="256"/>
+        <circle width="100" heigth="100" r="3" cx="40" cy="292"/>
+        <circle width="100" heigth="100" r="3" cx="40" cy="328"/>
+        <text x="15" y="331" class="text">10</text>
+        <text x="15" y="295" class="text">20</text>
+        <text x="15" y="259" class="text">30</text>
+        <text x="15" y="223" class="text">40</text>
+        <text x="15" y="187" class="text">50</text>
+        <text x="15" y="151" class="text">60</text>
+        <text x="15" y="115" class="text">70</text>
+        <text x="15" y="79" class="text">80</text>
+        <text x="15" y="43" class="text">90</text>
+        <text x="15" y="11" class="text">100</text>
+        <text x="105" y="390" class="text" id="txt9"></text>
+        <text x="195" y="390" class="text" id="txt10"></text>
+        <text x="275" y="390" class="text" id="txt11"></text>
+        <text x="355" y="390" class="text" id="txt12"></text>
+        </g>
+    </svg>
+    <script src="chart.js"></script>
+</body>
+</html>

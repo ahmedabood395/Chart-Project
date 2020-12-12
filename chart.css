@@ -1,0 +1,27 @@
+#myCanvas{
+    margin: 10px 30px;
+}
+#frm{
+    border: 1px solid black;
+    width: 50%;
+    margin-left: 20%;
+    text-align: center;
+    
+}
+input{
+    margin: 10px 20px 10px 0;
+}
+#mysvg1{
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    margin-left: 10%;
+    display: none;
+}
+#mysvg2{
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    margin-left: 10%;
+    display: none;
+}
